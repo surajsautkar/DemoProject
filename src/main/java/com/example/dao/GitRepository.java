@@ -16,5 +16,7 @@ import com.example.model.Git;
 public interface GitRepository extends JpaRepository<Git, Serializable>{
 	@Query(value="select * from git where name=?", nativeQuery = true)
 	public List<Git> fingByName(String name);
+	
+	public List<Git> findByCity(String city);
 
 }

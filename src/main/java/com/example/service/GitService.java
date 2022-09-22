@@ -10,6 +10,7 @@ public interface GitService {
 	public void deleteGitName(Integer id);
 	public Optional<Git> getGitName(Integer id);
 	public List<Git> getGitByName(String name);
+	public List<Git> getGitByCity(String city);
 
 }
 
