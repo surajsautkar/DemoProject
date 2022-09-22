@@ -38,6 +38,12 @@ public class GitServiceImpl implements GitService{
 		return list;
 	}
 
+	@Override
+	public List<Git> getGitByCity(String city) {
+		List<Git> list=gitRepository.findByCity(city);
+		return list;
+	}
+
 	
 
 }

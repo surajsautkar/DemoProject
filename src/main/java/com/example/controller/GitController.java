@@ -43,4 +43,9 @@ public class GitController {
 		List<Git> list=gitService.getGitByName(name);
 		return ResponseEntity.ok().body(list);
 	}
+	@GetMapping("/city/{city}")
+	public ResponseEntity<List<Git>> getGitByCity(@PathVariable("city") String city){
+		List<Git> list=gitService.getGitByCity(city);
+		return ResponseEntity.ok().body(list);
+	}
 }
